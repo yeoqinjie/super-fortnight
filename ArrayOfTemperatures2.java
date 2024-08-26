@@ -14,7 +14,7 @@ public class ArrayOfTemperatures2 {
 
         System.out.println("Enter " + arraySize + " temperatures: ");
 
-        for (int i = 0; i < arraySize; i++) {
+        for (int i = 0; i < temperature.length; i++) {
             temperature[i] = scanner.nextDouble();
             // add up to total
         }
@@ -24,7 +24,7 @@ public class ArrayOfTemperatures2 {
         System.out.println("The average temperature is " + average);
         System.out.println("The temperatures are: ");
 
-        for (int i = 0; i < arraySize; i++) {
+        for (int i = 0; i < temperature.length; i++) {
             // if else statement to check if above, below or is the average
         }
     }
