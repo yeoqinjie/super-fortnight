@@ -4,9 +4,13 @@ public class SpeciesDemo {
         Species earthSpecies = new Species();
 
         klingonSpecies.setSpecies("Klingon Ox", 10, 15);
-        earthSpecies.setSpecies("Klingon Ox", 10, 15);
+        earthSpecies.setSpecies("Elephant", 14, 200);
 
         klingonSpecies.writeOutput();
+        earthSpecies.writeOutput();
+
+        System.out.println("\n\n");
+        earthSpecies = klingonSpecies;
         earthSpecies.writeOutput();
 
         if (klingonSpecies == earthSpecies) {

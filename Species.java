@@ -27,6 +27,10 @@ public class Species {
         this.growthRate = growthRate;
     }
 
+    /**
+     * @param growthRate
+     * set growthRate to the value of growthRate
+     */
     public void setGrowthRate(double growthRate) {
         this.growthRate = growthRate;
     }
