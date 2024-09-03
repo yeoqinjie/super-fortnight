@@ -1,9 +1,9 @@
 package people;
 
 public class Person {
-    protected String name;
-    protected int age;
-    protected String contactNumber;
+    private String name;
+    private int age;
+    private String contactNumber;
 
     public Person(String name) {
         setName(name);
@@ -34,6 +34,6 @@ public class Person {
     }
 
     public String toString() {
-        return "Name:" + this.name;
+        return "Name:" + getName();
     }
 }

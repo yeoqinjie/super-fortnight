@@ -17,6 +17,6 @@ public class Student extends Person {
     }
 
     public String toString() {
-        return "Name: " + getName() + "\nStudent Number: " + studentNumber;
+        return "Name: " + getName() + "\nStudent Number: " + getStudentNumber();
     }
 }
