@@ -18,4 +18,12 @@ public class Rectangle implements Measureable {
     public void setWidth(int width) {
         this.width = width;
     }
+
+    public double getPerimeter() {
+        return 2 * (getWidth() + getHeight());
+    }
+
+    public double getArea() {
+        return getWidth() * getHeight();
+    }
 }

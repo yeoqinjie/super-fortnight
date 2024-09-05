@@ -5,7 +5,7 @@ public class Student extends Person {
 
     public Student(String name, int studentNumber) {
         super(name);
-        this.studentNumber = studentNumber;
+        setStudentNumber(studentNumber);
     }
 
     public int getStudentNumber() {
@@ -17,6 +17,6 @@ public class Student extends Person {
     }
 
     public String toString() {
-        return "Name: " + getName() + "\nStudent Number: " + getStudentNumber();
+        return super.toString() + "\nStudent Number: " + getStudentNumber();
     }
 }

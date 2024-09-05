@@ -2,7 +2,7 @@ package shape;
 
 public abstract class ShapeBase implements ShapeInterface
 {
-    private int offset; 
+    private int offset;
     
     public ShapeBase( )
     {
@@ -14,7 +14,7 @@ public abstract class ShapeBase implements ShapeInterface
         setOffset(offset);
     }
 
-    public abstract void drawHere( );
+    public abstract void drawHere();
 
     public void drawAt(int lineNumber)
     {

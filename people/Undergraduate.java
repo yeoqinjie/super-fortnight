@@ -5,6 +5,7 @@ public class Undergraduate extends Student {
 
     public Undergraduate(String name, int studentNumber, int level) {
         super(name, studentNumber);
+        setLevel(level);
     }
 
     public int getLevel() {
@@ -16,6 +17,6 @@ public class Undergraduate extends Student {
     }
 
     public String toString() {
-        return "Name: " + getName() + "\nStudent Number: " + getStudentNumber() + "\nLevel: " + getLevel();
+        return super.toString() + "\nLevel: " + getLevel();
     }
 }
