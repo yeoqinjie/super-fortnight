@@ -15,4 +15,30 @@ public class Dog {
         System.out.println("Age in calendar years: " + age);
         System.out.println("Age in human years: " + getAgeInHumanYears());
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getBreed() {
+        return breed;
+    }
+
+    public void setBreed(String breed) {
+        this.breed = breed;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    
 }
