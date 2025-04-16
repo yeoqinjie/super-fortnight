@@ -12,6 +12,10 @@ class Grade {
         score = scanner.nextInt();
 
         // Evaluate the score and assign a grade
+        if (score > 100 || score < 0) {
+            System.out.println("You have entered a number outside the range of 0 to 100.");
+            System.exit(0);
+        } 
         if (score > 90) {
             grade = "A";
         } else if (score > 80) {
