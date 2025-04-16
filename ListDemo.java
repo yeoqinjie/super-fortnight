@@ -19,7 +19,7 @@ public class ListDemo {
                 pointer++;
             }
         }
-        
+
         System.out.println("You have reached the maximum number of items.");
         System.out.println("You have entered the following items:");
 
@@ -29,13 +29,13 @@ public class ListDemo {
     }
 
     public static boolean addList(String[] list, String item, int pointer) {
-        boolean itemExists = false;
         for (int i = 0; i < list.length; i++) {
             if (item.equalsIgnoreCase(list[i])) {
-                itemExists = true;
+                return false;
             }
         }
+       
         list[pointer] = item;
-        return !itemExists;
+        return true;
     }
 }
