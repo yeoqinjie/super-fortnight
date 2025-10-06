@@ -1,3 +1,9 @@
+/*
+ * This program asks the users for 2 numbers and return the total.
+ * Author: Alvin
+ * Contact: alyeo@lsbf.edu.sg
+ * Last Modified: 06 Oct 25
+ */
 
 import java.util.*;
 
@@ -10,7 +16,7 @@ public class FirstProgram {
 
         int n1 = 0, n2 = 0;
 
-        Scanner keyboard = new Scanner(System.in);
+        Scanner keyboard = new Scanner(System.in); // memorise
         n1 = keyboard.nextInt();
         n2 = keyboard.nextInt();
 

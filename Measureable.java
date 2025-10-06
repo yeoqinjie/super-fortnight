@@ -4,5 +4,8 @@ public interface Measureable {
      */
     public double getArea();
 
+    /*
+     * To get Perimeter
+     */
     public double getPerimeter();
 }
