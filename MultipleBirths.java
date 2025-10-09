@@ -15,15 +15,13 @@ public class MultipleBirths {
         } 
 
         switch (numberOfBabies) {
-            case 1:
-            case 2:
+            case 1, 2:
                 msg = "Congratulations";
                 break;
             case 3:
                 msg = "Wow. Triplets";
                 break;
-            case 4:
-            case 5:
+            case 4, 5:
                 msg = "Unbelievable";
                 break;
             default:
