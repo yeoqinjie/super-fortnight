@@ -1,12 +1,11 @@
 import java.util.*;
 
-
 public class ReturnArray {
     public static void main(String[] args) {
-        int[] array = new int[2];
+        int[] array = new int[7];
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Enter 2 number: ");
+        System.out.println("Enter " + array.length + " number: ");
 
         for (int i = 0; i < array.length; i++) {
             array[i] = scanner.nextInt();

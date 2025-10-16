@@ -1,9 +1,10 @@
 import java.util.*;
 
 class SpendingSpree {
-
+    // Constants
     public static final int MAX_ITEM = 3;
     public static final double MAX_AMOUNT = 100;
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int count = 0;
@@ -35,7 +36,5 @@ class SpendingSpree {
         }
 
         System.out.println("You spent $" + spend + ", you are done shopping");
-
-       
     }
 }

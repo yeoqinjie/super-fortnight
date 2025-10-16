@@ -4,8 +4,8 @@ public class ListDemo {
     public static final int SIZE = 3;
 
     public static void main(String[] args) {
-        String[] list;
-        list = new String[SIZE];
+        String[] list; // declare a list of String objects
+        list = new String[SIZE]; // set it to size 3
         Scanner scanner = new Scanner(System.in);
         int pointer = 0;
         boolean addItemSuccess = false;

@@ -1,7 +1,7 @@
 import java.util.*;
 
 class BugTrouble {
-
+    // constants
     public static final double GROWTH_RATE = 0.95;
     public static final double ONE_BUG_VOLUME = 0.002;
 
