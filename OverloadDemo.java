@@ -4,7 +4,9 @@ public class OverloadDemo {
         char a = 'a', b = 'B';
         double p = 123.45, q = 67.89;
 
+        p("" + Overload.getAverage(a, b, z));
         p("" + Overload.getAverage(a, b));
+        p("" + Overload.getAverage(a, p));
     }
 
     public static void p(String x) {

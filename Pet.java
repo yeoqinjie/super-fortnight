@@ -2,20 +2,23 @@ public class Pet {
     private String name;
     private int age;
     private double weight;
-    private double height;
 
-    public Pet(String name, int age, double weight, double height) {
+    public Pet(String name, int age, double weight) {
         setName(name);
         setAge(age);
-        setHeight(height);
         setWeight(weight);
     }
 
     public Pet(String name) {
         setName(name);
         setAge(1);
-        setWeight(0);
-        setHeight(0);
+        setWeight(0.1);
+    }
+
+    public Pet(int age) {
+        setName("Unknown Name");
+        setAge(age);
+        setWeight(0.1);
     }
 
     public String getName() {
@@ -33,7 +36,8 @@ public class Pet {
     public void setAge(int age) {
         if (age <= 0)
             this.age = 1;
-        this.age = age;
+        else
+            this.age = age;
     }
 
     public double getWeight() {
@@ -41,22 +45,18 @@ public class Pet {
     }
 
     public void setWeight(double weight) {
-        this.weight = weight;
+        if (weight <= 0)
+            this.weight = 0.1;
+        else
+            this.weight = weight;
     }
 
-    public double getHeight() {
-        return height;
-    }
-
-    public void setHeight(double height) {
-        this.height = height;
-    }
-
+    // toString is the default output method
     public String toString() {
-        return "Name: " + getName() + "\nAge: " + getAge() + "\nWeight: " + getWeight() + "\nHeight: " + getHeight() + "\n\n";
+        return "Name: " + getName() + "\nAge: " + getAge() + "\nWeight: " + getWeight() + "\n\n";
     }
 
     public void writeOutput() {
-        System.out.println("Name: " + getName() + "\nAge: " + getAge() + "\nWeight: " + getWeight() + "\nHeight: " + getHeight() + "\n\n");
+        System.out.println("Name: " + getName() + "\nAge: " + getAge() + "\nWeight: " + getWeight() + "\n\n");
     }
 }
