@@ -5,6 +5,7 @@ public class Person {
     private int age;
     private String contactNumber;
 
+    // Constructor
     public Person(String name) {
         setName(name);
     }

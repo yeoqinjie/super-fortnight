@@ -17,6 +17,6 @@ public class Undergraduate extends Student {
     }
 
     public String toString() {
-        return super.toString() + "\nLevel: " + getLevel();
+        return "Undergraduate---\n" + super.toString() + "\nLevel: " + getLevel();
     }
 }

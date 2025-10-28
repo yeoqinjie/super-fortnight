@@ -16,10 +16,8 @@ public class Admin extends Person {
         this.role = role;
     }
 
-    @Override
     public String toString() {
-        return "Admin [role=" + role + ", getRole()=" + getRole() + ", getName()=" + getName() + ", getAge()="
-                + getAge() + ", getContactNumber()=" + getContactNumber() + ", toString()=" + super.toString() + "]";
+        return "Admin---\n" + super.toString() + "\nRole: " + getRole();
     }
     
 }
