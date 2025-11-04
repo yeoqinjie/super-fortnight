@@ -12,17 +12,24 @@ public class DoDivision {
 
         try {
             result = divide(numerator, denominator);
-        } catch (ArithmeticException e) {
+        } catch (UseOfTwoException e) {
+            System.out.println(e.getMessage());
+            result = 0;
+        } catch (DivideByZeroException e) {
             result = 9999;
         }
 
         System.out.println("The result is " + result);
     }
 
-    public static double divide(double numerator, double denominator) throws ArithmeticException {
+    public static double divide(double numerator, double denominator) throws DivideByZeroException, UseOfTwoException {
+        if (numerator == 2 || denominator == 2) {
+            throw new UseOfTwoException("TWO is EVIL!");
+        }
+
         if (denominator == 0) {
-            throw new ArithmeticException();
-        } 
+            throw new DivideByZeroException();
+        }
         
         return numerator / denominator;
     }
