@@ -12,7 +12,7 @@ public class ExceptionDemo {
         try {
             System.out.print("Enter number of glasses of milk: ");
             milk = scanner.nextInt();
-            share = donuts / milk;
+            share = donuts / milk; // exception may occur here
             System.out.println("You have " + share + " donuts per glass of milk");
         } catch (ArithmeticException e) {
             System.out.println("No milk!\nGo buy some milk");
